@@ -42,6 +42,7 @@ For the _Variable value_ enter the Bing Key that you created with your Bing Maps
 ![alt text](http://www.jasonpriddy.com/images/EnvironmentVariablesValues.png "Environment Variables Values")
 
 **TODO**
+
 1. Create directives for use with the AngularJS portion of the demo app.
 2. Create routes in AngularJS for use in displaying stop data on a third party map.
 3. Publish web application to free Azure account.
