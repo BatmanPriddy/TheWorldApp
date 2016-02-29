@@ -4,6 +4,8 @@ Welcome fellow GitHub aficionado!
 
 This demo application will allow you to plan for trips around the world.  Feel free to clone this repository and modify in any way you'd like.
 
+The corresponding Pluralsight tutorial for this demo can be found [here](https://app.pluralsight.com/library/courses/aspdotnet-5-ef7-bootstrap-angular-web-app/table-of-contents).
+
 It was built with the following:
 * Visual Studio 2015 (IDE)
 * ASP.NET 5 (.NET Framework RC1)
