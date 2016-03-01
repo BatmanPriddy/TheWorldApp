@@ -1,4 +1,4 @@
-![alt-text](http://www.4by4us.com/sites/default/files/uploads/asp.net_.png "ASP.NET Logo")
+![alt-text](http://www.clarity-ventures.com/portals/0/images/resources/dotnetlogo.png "ASP.NET Logo")
 
 # The World App
 
