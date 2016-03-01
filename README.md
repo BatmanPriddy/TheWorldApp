@@ -1,3 +1,5 @@
+![alt-text](http://www.4by4us.com/sites/default/files/uploads/asp.net_.png "ASP.NET Logo")
+
 # The World App
 
 Welcome fellow GitHub aficionado!
