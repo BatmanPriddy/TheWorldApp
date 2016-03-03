@@ -8,8 +8,8 @@ This demo application will allow you to plan for trips around the world.  Feel f
 
 The corresponding Pluralsight tutorial for this demo can be found [here](https://app.pluralsight.com/library/courses/aspdotnet-5-ef7-bootstrap-angular-web-app/table-of-contents).
 
-It was built with the following:
-* Visual Studio 2015 (IDE)
+### Tools/Frameworks
+* Visual Studio Community Edition 2015 (IDE)
 * ASP.NET 5 (.NET Framework RC1)
 * MVC 6 (Lastest version of Microsoft's port of the MVC Design Pattern)
 * Web API (Now merged with MVC 6, uses HTTP verbs for HTTP Requests/Responses)
@@ -20,35 +20,47 @@ It was built with the following:
 * AngularJS (Version 1.5, for communicating with the Web API and displaying results)
 * JSON (Format for transmitted and received data)
 
-The web application requires the installation of [Visual Studio Community Edition 2015](https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx), and the latest release of the [ASP.NET 5 Framework (RC1)](https://go.microsoft.com/fwlink/?LinkId=627627).  
+### Installation Instructions
 
-For detailed installation instructions, please see [this](http://docs.asp.net/en/latest/getting-started/installing-on-windows.html) documentation.
+In order to successfully run this web application, you must install the following:
+* [Visual Studio Community Edition 2015](https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx)
+* The latest release of the [ASP.NET 5 Framework (RC1)](https://go.microsoft.com/fwlink/?LinkId=627627)
+* For detailed installation instructions of the previous two items, please see [this](http://docs.asp.net/en/latest/getting-started/installing-on-windows.html) documentation
 
-One last requirement is the creation of a free Bing Maps key, for use with their geolocation API.  You may create your Bing Maps Key [here](https://www.bingmapsportal.com/).
+### Configuration Instructions
+#### Bing Maps Key Creation
+Once you have successfully installed the required IDE and Framework, the last requirement will be to obtain a Bing Maps Key, for use with their geolocation API.
 
+You may create your Bing Maps Key [here](https://www.bingmapsportal.com/).
+
+#### Bing Maps Key Configuration
 The Bing Maps key must be added as an environment variable on your Windows system, by performing the following steps:
 
-Step 1: Depending on your version of the Windows OS, search for _Environment Variables_
+Step 1: Depending on your version of the Windows OS, search for `Environment Variables`
 
-Step 2: Once the _System Properties_ dialog box opens, click the _Environment Variables_ button
+Step 2: Once the `System Properties` dialog box opens, click the `Environment Variables` button
 
 ![alt-text](http://www.jasonpriddy.com/images/SystemProperties.png "System Properties")
 
-Step 3: In the top section, click the _New..._ button
+Step 3: In the top section, click the `New...` button
 
 ![alt text](http://www.jasonpriddy.com/images/EnvironmentVariables.png "Environment Variables")
 
 Step 4:
 
-For the _Variable name_ enter **AppSettings:BingKey**   
-For the _Variable value_ enter the Bing Key that you created with your Bing Maps account.
+For the `Variable name` enter `AppSettings:BingKey`   
+For the `Variable value` enter the Bing Key that you created with your Bing Maps account.
 
 ![alt text](http://www.jasonpriddy.com/images/EnvironmentVariablesValues.png "Environment Variables Values")
 
-**TODO**
+### Running the application
 
-1. Create directives for use with the AngularJS portion of the demo app.
-2. Create routes in AngularJS for use in displaying stop data on a third party map.
-3. Publish web application to free Azure account.
+Once everything is up and running, you can simply open the web application in Visual Studio Community Edition 2015 and run the application via the IIS Express run button.
+
+![alt text](http://www.jasonpriddy.com/images/IISExpressButton.png "IIS Express Run Button")
+
+**TO DO**
+
+1. Publish web application to free Azure account.
 
 Thank you and enjoy!
