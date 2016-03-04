@@ -59,8 +59,15 @@ Once everything is up and running, you can simply open the web application in Vi
 
 ![alt text](http://www.jasonpriddy.com/images/IISExpressButton.png "IIS Express Run Button")
 
+Once the application loads in your browser of your choice, you may login with the following credentials:
+* Username: `samhastings` (**all lowercase**)
+* Password: `P@ssw0rd1`
+
+If you encounter any issues at all, please feel free to contact me anytime at [jason_priddy@yahoo.com](mailto:jason_priddy@yahoo.com?subject=Help%20with%20TheWorld%20app), or message me here on GitHub.
+
 **TO DO**
 
-1. Publish web application to free Azure account.
+1. Update documentation to enclude how to perform a database migration to seed the database.
+2. Publish web application to free Azure account.
 
 Thank you and enjoy!
