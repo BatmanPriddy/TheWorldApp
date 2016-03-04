@@ -65,11 +65,11 @@ namespace TheWorld
             services.AddTransient<WorldContextSeedData>();
             services.AddScoped<IWorldRepository, WorldRepository>();
 
-#if DEBUG
+//#if DEBUG
             services.AddScoped<IMailService, DebugMailService>();
-#else
-            services.AddScoped<IMailService, RealMailService>();
-#endif
+//#else
+//            services.AddScoped<IMailService, RealMailService>();
+//#endif
 
             services.AddScoped<IMapper>(map =>
             {
@@ -84,10 +84,19 @@ namespace TheWorld
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public async void Configure(IApplicationBuilder app, WorldContextSeedData seeder, ILoggerFactory loggerFactory)
+        public async void Configure(IApplicationBuilder app, WorldContextSeedData seeder, ILoggerFactory loggerFactory, IHostingEnvironment env)
         {
-            loggerFactory.AddDebug(LogLevel.Warning);
-
+            if (env.IsDevelopment())
+            {
+                loggerFactory.AddDebug(LogLevel.Information);
+                app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                loggerFactory.AddDebug(LogLevel.Error);
+                app.UseExceptionHandler("/App/Error"); //just for demo purposes, no route or physical pages created
+            }
+            
             //app.Run(async (context) =>
             //{
             //    var html = @"<!DOCTYPE html><html><head></head><body><h2>The World</h2></body></html>";

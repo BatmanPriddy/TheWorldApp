@@ -16,7 +16,8 @@
     "Microsoft.Extensions.Logging.Debug": "1.0.0-rc1-final",
     "AutoMapper": "4.2.0",
     "Microsoft.Net.Http": "2.2.22",
-    "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-rc1-final"
+    "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-rc1-final",
+    "Microsoft.AspNet.Diagnostics": "1.0.0-rc1-final"
   },
 
   "commands": {
@@ -41,6 +42,11 @@
     "wwwroot",
     "node_modules"
   ],
+
+  "scripts": {
+    "prepublish": [ "npm install", "bower install" ],
+    "prepare": "gulp minify"
+  },
   "publishExclude": [
     "**.user",
     "**.vspscc"
