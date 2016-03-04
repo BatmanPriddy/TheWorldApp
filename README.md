@@ -27,7 +27,19 @@ In order to successfully run this web application, you must install the followin
 * The latest release of the [ASP.NET 5 Framework (RC1)](https://go.microsoft.com/fwlink/?LinkId=627627)
 * For detailed installation instructions of the previous two items, please see [this](http://docs.asp.net/en/latest/getting-started/installing-on-windows.html) documentation
 
+#### Check Runtime Engines Via The .NET Version Manager
+
+Once the ASP.NET 5 Framework is installed, open your command prompt and run the command `dnvm list`.  You should see a list similar to the one below:
+
+![alt-text](http://jasonpriddy.com/images/dnvmlist.png ".NET Version Manager List")
+
+If you do not have at least Version `1.0.0-rc1-update1` with the Runtime `clr` and Architecture `x64`, you will need to install that version for this application to function.  You may install that version of the runtime with the following command:
+
+`dnvm install 1.0.0-rc1-update1 -r clr -arch x64 -p`    
+(`-p` signifies to keep the version active and persistent even after the command prompt window is closed)
+
 ### Configuration Instructions
+
 #### Bing Maps Key Creation
 Once you have successfully installed the required IDE and Framework, the last requirement will be to obtain a Bing Maps Key, for use with their geolocation API.
 
