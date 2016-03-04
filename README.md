@@ -67,7 +67,6 @@ If you encounter any issues at all, please feel free to contact me anytime at [j
 
 **TO DO**
 
-1. Update documentation to enclude how to perform a database migration to seed the database.
-2. Publish web application to free Azure account.
+1. Publish web application to free Azure account.
 
 Thank you and enjoy!
