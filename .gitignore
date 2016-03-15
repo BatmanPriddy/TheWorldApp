@@ -1,1 +1,9 @@
+# User-specific files
+*.suo
+*.user
+
+# Folders
 src/TheWorld/node_modules/
+
+# DNX
+project.lock.json
