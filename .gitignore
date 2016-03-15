@@ -5,5 +5,8 @@
 # Folders
 src/TheWorld/node_modules/
 
+# Published information
+src/TheWorld/Properties/PublishProfiles/
+
 # DNX
 project.lock.json
