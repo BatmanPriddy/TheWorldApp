@@ -8,5 +8,8 @@ src/TheWorld/node_modules/
 # Published information
 src/TheWorld/Properties/PublishProfiles/
 
+# Bower dependencies (auto reload if not present)
+src/TheWorld/wwwroot/lib
+
 # DNX
 project.lock.json
